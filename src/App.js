@@ -12,7 +12,7 @@ class App extends React.Component {
     const {
       data: { results },
     } = await axios.get(
-      "http://www.gimhae.go.kr/openapi/tour/lodging.do?page=3&pageunit=10"
+      "http://www.gimhae.go.kr/openapi/tour/lodging.do?page=4&pageunit=10"
     );
     this.setState({ hotels: results, isLoading: false });
 

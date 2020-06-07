@@ -6,8 +6,12 @@ function Hotels({ id, address, category, name, information, contact, images }) {
   return (
     <div className="hotel">
       <div className="hotel__header">
-        <span className="hotel__name">{name}</span>
-        <span className="hotel__category">{category}</span>
+        <div className="hotel__header-column">
+          <div className="hotel__name">{name}</div>
+        </div>
+        <div className="hotel__header-column">
+          <div className="hotel__category">{category}</div>
+        </div>
       </div>
       <div className="hotel__content">
         <div className="hotel__information">
